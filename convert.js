@@ -5,6 +5,7 @@ var to = process.argv[5];
 var exp1;
 var exp2;
 
+// Consider replacing the following `if` statements with `switch`.
 if (from == 'mm') {
     exp1 = -3;
 } else if (from == 'cm') {
@@ -33,6 +34,7 @@ var result = exponent(num, exp1-exp2);
 console.log(result);
 
 
+// Consider using Math.pow instead (see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow)
 function exponent(num,exp) {
     if (exp > 0) {
         for (i = 0; i<exp; i++) {
